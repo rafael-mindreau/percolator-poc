@@ -1,19 +1,19 @@
 import React from 'react';
-import { BrowserRouter as Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Home from './components/Home';
 import Configurator from './components/Configurator';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <Header />
 
       <Switch>
-        <Route exact path="/" component={Home}>Home</Route>
-        <Route path="/configurator" component={Configurator}>Configurator</Route>
+        <Route exact path="/" component={Home} />
+        <Route path="/configurator" component={Configurator} />
       </Switch>
 
       <Footer />

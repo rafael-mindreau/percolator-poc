@@ -1,0 +1,17 @@
+@import '../constants/colors.scss';
+
+.app a.logo {
+  display: block;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+
+  font-family: 'Literata', serif;
+  font-size: 38px;
+  font-weight: 700;
+  text-align: center;
+
+  border-radius: 2px;
+  color: white;
+  background-color: $secondary-background;
+}

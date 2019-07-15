@@ -1,0 +1,42 @@
+@import '../constants/colors.scss';
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 40px 140px;
+  height: 500px;
+  background-color: $main-color;
+
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+
+  .assembly-perspective-view {
+    &:hover svg {
+      &.spreader {
+        top: 290px;
+      }
+    }
+
+    svg {
+      display: block;
+      position: relative;
+
+      .filled {
+        fill: $main-color;
+      }
+
+      &.top {
+        width: 50%;
+      }
+
+      &.spreader {
+        position: absolute;
+        top: 258px;
+        left: 378px;
+        width: 7%;
+
+        transition: top 0.7s ease-in-out;
+      }
+    }
+  }
+}

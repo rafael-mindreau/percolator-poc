@@ -1,8 +1,15 @@
 import React from 'react';
+import Hero from './Hero';
 
 function Home() {
+  const textComponent = <div>Hey there</div>;
+
   return (
-    <h1>Welcome to Percolator website</h1>
+    <div className="home">
+      <Hero
+        text={textComponent}
+      />
+    </div>
   );
 }
 
