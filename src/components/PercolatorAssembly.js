@@ -1,12 +1,18 @@
 import React from 'react';
-import TopDefault from './percolator-parts/tops/TopDefault';
-import Spreader01 from './percolator-parts/spreaders/Spreader01';
+import TopDefault from './percolator-parts/3D/tops/TopDefault';
+import SpreaderBasic from './percolator-parts/3D/spreaders/Spreader01';
+import BasketBasic from './percolator-parts/3D/baskets/Basket01';
+import Ring from './percolator-parts/3D/Ring';
+import BottomDefault from './percolator-parts/3D/bottoms/BottomDefault';
 
 function PercolatorAssembly() {
   return (
     <div className="assembly-perspective-view">
-      <Spreader01 />
       <TopDefault />
+      <SpreaderBasic />
+      <BasketBasic />
+      <Ring />
+      <BottomDefault />
     </div>
   );
 }

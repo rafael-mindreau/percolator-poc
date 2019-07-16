@@ -10,16 +10,50 @@
 
   clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
 
+  .hero-text {
+    padding-top: 15px;
+    max-width: 350px;
+    color: white;
+
+    h2, p {
+      margin-bottom: 20px;
+      font-size: 14px;
+      line-height: 22px;
+
+      &.fancy-title {
+        font-size: 34px;
+      }
+
+      &.definition-text {
+        font-family: 'Literata', serif;
+      }
+    }
+  }
+
   .assembly-perspective-view {
+    position: relative;
+    width: 300px;
+
     &:hover svg {
       &.spreader {
-        top: 290px;
+        top: 160px;
+      }
+
+      &.basket {
+        top: 155px;
+      }
+
+      &.ring {
+        top: 240px;
+      }
+
+      &.bottom {
+        top: 255px;
       }
     }
 
     svg {
       display: block;
-      position: relative;
 
       .filled {
         fill: $main-color;
@@ -27,13 +61,46 @@
 
       &.top {
         width: 50%;
+        top: 0;
+        left: 0;
       }
 
       &.spreader {
         position: absolute;
-        top: 258px;
-        left: 378px;
-        width: 7%;
+        z-index: -1;
+        top: 135px;
+        left: 30px;
+        width: 33%;
+
+        transition: top 0.7s ease-in-out;
+      }
+
+      &.basket {
+        position: absolute;
+        z-index: -2;
+        top: 108px;
+        left: 29px;
+        width: 33%;
+
+        transition: top 0.7s ease-in-out;
+      }
+
+      &.ring {
+        position: absolute;
+        z-index: -3;
+        top: 140px;
+        left: 30px;
+        width: 32%;
+
+        transition: top 0.7s ease-in-out;
+      }
+
+      &.bottom {
+        position: absolute;
+        z-index: -1;
+        top: 140px;
+        left: 14px;
+        width: 43%;
 
         transition: top 0.7s ease-in-out;
       }
