@@ -1,0 +1,14 @@
+.home {
+  position: relative;
+
+  .hero {
+    position: relative;
+    z-index: 10;
+  }
+
+  img {
+    position: absolute;
+    width: 100%;
+    top: 120px;
+  }
+}

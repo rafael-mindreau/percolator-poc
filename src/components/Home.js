@@ -1,6 +1,8 @@
 import React from 'react';
 import Hero from './Hero';
 import Button from './general/ButtonLink';
+import Photo from '../img/Coffee-Percolator.jpg';
+import './Home.scss';
 
 function Home() {
   const heroText = (
@@ -29,6 +31,7 @@ function Home() {
       <Hero
         textComponent={heroText}
       />
+      <img src={Photo} alt="Percolator on table" />
     </div>
   );
 }
