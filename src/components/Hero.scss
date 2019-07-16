@@ -21,6 +21,7 @@
       line-height: 22px;
 
       &.fancy-title {
+        text-transform: capitalize;
         font-size: 34px;
       }
 
@@ -30,80 +31,12 @@
     }
   }
 
-  .assembly-perspective-view {
-    position: relative;
-    width: 300px;
+  .button {
+    margin-top: 25px;
 
-    &:hover svg {
-      &.spreader {
-        top: 160px;
-      }
-
-      &.basket {
-        top: 155px;
-      }
-
-      &.ring {
-        top: 240px;
-      }
-
-      &.bottom {
-        top: 255px;
-      }
-    }
-
-    svg {
-      display: block;
-
-      .filled {
-        fill: $main-color;
-      }
-
-      &.top {
-        width: 50%;
-        top: 0;
-        left: 0;
-      }
-
-      &.spreader {
-        position: absolute;
-        z-index: -1;
-        top: 135px;
-        left: 30px;
-        width: 33%;
-
-        transition: top 0.7s ease-in-out;
-      }
-
-      &.basket {
-        position: absolute;
-        z-index: -2;
-        top: 108px;
-        left: 29px;
-        width: 33%;
-
-        transition: top 0.7s ease-in-out;
-      }
-
-      &.ring {
-        position: absolute;
-        z-index: -3;
-        top: 140px;
-        left: 30px;
-        width: 32%;
-
-        transition: top 0.7s ease-in-out;
-      }
-
-      &.bottom {
-        position: absolute;
-        z-index: -1;
-        top: 140px;
-        left: 14px;
-        width: 43%;
-
-        transition: top 0.7s ease-in-out;
-      }
+    a {
+      border: 0;
+      background-color: $call-to-action;
     }
   }
 }

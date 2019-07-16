@@ -4,7 +4,7 @@ import './Button.scss';
 
 export default function ButtonBasic({ title }) {
   return (
-    <div className="button basic">
+    <div className="button">
       <NavLink to="/configurator">{title}</NavLink>
     </div>
   );

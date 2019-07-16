@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from './Hero';
-import Button from './ui/ButtonLink';
+import Button from './general/ButtonLink';
 
 function Home() {
   const textComponent = (

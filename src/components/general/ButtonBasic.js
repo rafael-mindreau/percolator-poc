@@ -3,6 +3,6 @@ import './Button.scss';
 
 export default function ButtonBasic({ title }) {
   return (
-    <button className="button basic" type="button">{title}</button>
+    <button className="button" type="button">{title}</button>
   );
 }

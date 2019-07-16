@@ -4,6 +4,7 @@ import SpreaderBasic from './percolator-parts/3D/spreaders/Spreader01';
 import BasketBasic from './percolator-parts/3D/baskets/Basket01';
 import Ring from './percolator-parts/3D/Ring';
 import BottomDefault from './percolator-parts/3D/bottoms/BottomDefault';
+import './PercolatorAssembly.scss';
 
 function PercolatorAssembly() {
   return (
