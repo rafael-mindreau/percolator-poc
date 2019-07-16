@@ -3,7 +3,7 @@ import Hero from './Hero';
 import Button from './general/ButtonLink';
 
 function Home() {
-  const textComponent = (
+  const heroText = (
     <div>
       <h2 className="fancy-title definition-text">перколятор</h2>
       <p className="definition-text">
@@ -27,7 +27,7 @@ function Home() {
   return (
     <div className="home">
       <Hero
-        textComponent={textComponent}
+        textComponent={heroText}
       />
     </div>
   );
