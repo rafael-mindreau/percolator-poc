@@ -5,7 +5,7 @@ import './Hero.scss';
 function Hero({ textComponent }) {
   return (
     <div className="hero">
-      <PercolatorAssembly />
+      <PercolatorAssembly dynamic backgroundColor="#D46D44" />
       <div className="hero-text">
         { textComponent }
       </div>

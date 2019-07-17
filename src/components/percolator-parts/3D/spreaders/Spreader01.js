@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Spreader01() {
+export default function Spreader01({ fillColor }) {
   return (
     /* eslint-disable */
     <svg
@@ -16,7 +16,7 @@ export default function Spreader01() {
              stroke-miterlimit="10"
              d="m 37.482611,291.13055 c 0,3.10543 -8.335632,5.62291 -18.618044,5.62291 -10.2824129,0 -18.61804507,-2.51748 -18.61804507,-5.62291 0,-3.10543 8.33563217,-5.7903 18.61804507,-5.7903 10.282412,0 18.618044,2.68487 18.618044,5.7903 z"
              id="path576"
-             className="filled" stroke="white" stroke-width="0.49304304" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" />
+             fill={fillColor} stroke="white" stroke-width="0.49304304" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" />
           <path
              stroke-miterlimit="10"
              d="m 35.331958,291.13055 c 0,2.74674 -7.372719,4.97332 -16.467391,4.97332 -9.0946722,0 -16.4673913,-2.22658 -16.4673913,-4.97332 0,-2.74675 7.3187309,-5.10744 16.4134023,-5.10744 9.094672,0 16.52138,2.36069 16.52138,5.10744 z"

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function TopDefault() {
+export default function TopDefault({ fillColor }) {
   return (
     /* eslint-disable */
     <svg
@@ -35,12 +35,12 @@ export default function TopDefault() {
           stroke-miterlimit="10"
           transform="matrix(0.26419981,0,0,0.2645697,-69.176408,209.68845)" />
        <path
-          className="filled" stroke="white" stroke-width="0.52876937" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+          fill={fillColor} stroke="white" stroke-width="0.52876937" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
           id="path636"
           d="m 12.197133,284.56168 v 4.49768 c 0,0 -0.352178,3.13065 1.321,4.10083 0,0 15.984088,7.7167 36.635795,0.48496 2.690875,-1.4771 2.257851,-3.8733 2.257851,-3.8733 l 0.256802,-5.21017"
           stroke-miterlimit="10" />
        <path
-          className="filled" stroke="white" stroke-width="0.52876937" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+          fill={fillColor} stroke="white" stroke-width="0.52876937" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
           id="path638"
           d="m 6.3292557,259.21775 3.1595655,21.18806 c 0,0 1.1062048,3.2685 2.6031608,4.06221 8.097196,6.44333 32.271478,6.31104 40.697603,0.004 1.509638,-1.12998 2.818219,-2.82138 2.818219,-2.82138 l 5.534194,-37.25988 -6.073426,3.39549 -15.692147,2.02846 -17.91037,-0.44078 -11.7386613,-2.44277 -5.608962,-3.43834 0.020608,-1.48292"
           stroke-miterlimit="10" />

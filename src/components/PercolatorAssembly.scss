@@ -2,9 +2,10 @@
 
 .assembly-perspective-view {
   position: relative;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
 
-  &:hover svg {
+  &.dynamic:hover svg, &.open svg {
     &.spreader {
       top: 160px;
     }
@@ -25,52 +26,50 @@
   svg {
     display: block;
 
-    .filled {
-      fill: $main-color;
-    }
-
     &.top {
-      width: 50%;
+      position: absolute;
+      z-index: 6;
+      width: 150px;
       top: 0;
       left: 0;
     }
 
     &.spreader {
       position: absolute;
-      z-index: -1;
+      z-index: 4;
       top: 135px;
       left: 30px;
-      width: 33%;
+      width: 99px;
 
       transition: top 0.7s ease-in-out;
     }
 
     &.basket {
       position: absolute;
-      z-index: -2;
+      z-index: 3;
       top: 108px;
       left: 29px;
-      width: 33%;
+      width: 99px;
 
       transition: top 0.7s ease-in-out;
     }
 
     &.ring {
       position: absolute;
-      z-index: -3;
+      z-index: 2;
       top: 140px;
       left: 30px;
-      width: 32%;
+      width: 96px;
 
       transition: top 0.7s ease-in-out;
     }
 
     &.bottom {
       position: absolute;
-      z-index: -1;
+      z-index: 5;
       top: 140px;
       left: 14px;
-      width: 43%;
+      width: 129px;
 
       transition: top 0.7s ease-in-out;
     }

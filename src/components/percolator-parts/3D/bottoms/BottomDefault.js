@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function TopDefault() {
+export default function BottomDefault({ fillColor }) {
   return (
     /* eslint-disable */
     <svg
@@ -16,7 +16,7 @@ export default function TopDefault() {
              stroke-miterlimit="10"
              d="m 46.711654,248.06028 -0.01451,-5.56784 c 0,3.18671 -8.908048,5.78419 -19.878556,5.78419 -10.970509,0 -19.8935945,-2.56876 -19.8935945,-5.7552 v 5.15491 l -2.2423789,3.55747 -4.4188054,33.73012 c 0,0 0.3297616,3.4916 2.3742835,5.46797 2.0445219,1.97637 25.6554523,12.78055 48.2770983,0.59291 3.891187,-2.5034 2.967854,-5.53385 2.967854,-5.53385 l -4.880471,-33.92775 z"
              id="path552"
-             className="filled" stroke="white" stroke-width="0.52732575" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" />
+             fill={fillColor} stroke="white" stroke-width="0.52732575" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" />
           <path
              stroke-miterlimit="10"
              d="m 4.6826146,251.23381 c 0,0 1.1211895,0.19764 3.1657114,3.75511 0,0 5.737852,-0.46115 11.409751,2.63517 0,0 4.55071,-1.31758 13.520226,0 0,0 4.99048,-2.17401 12.223075,-2.37165 0,0 1.165246,-2.63516 4.001196,-3.68923"

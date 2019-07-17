@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Spreader01() {
+export default function Basket01({ fillColor }) {
   return (
     /* eslint-disable */
     <svg
@@ -18,14 +18,14 @@ export default function Spreader01() {
              stroke-miterlimit="10"
              d="m 403.113,470.228 c -8.61,5.235 -9.113,6.448 -9.113,17.5 v 50.756 c 0,0 -1.23,4.516 -10.126,4.516 h 0.063 c -8.896,0 -9.938,-4.516 -9.938,-4.516 v -50.756 c 0,-11.052 -0.872,-12.265 -9.482,-17.5"
              id="path394"
-             className="filled" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" />
+             fill={fillColor} stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" />
           <g
              id="g398">
             <path
                stroke-miterlimit="10"
                d="m 456,393 v 55.427 c 0,12.454 -32.236,22.451 -72,22.451 -39.764,0 -72,-10.195 -72,-22.648 V 393 392.845 c 0,-12.454 32.236,-22.549 72,-22.549 39.764,0 72,10.096 72,22.549 z"
                id="path396"
-               className="filled" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" />
+               fill={fillColor} stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" />
           </g>
           <path
              stroke-miterlimit="10"

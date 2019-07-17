@@ -6,14 +6,16 @@ import Ring from './percolator-parts/3D/Ring';
 import BottomDefault from './percolator-parts/3D/bottoms/BottomDefault';
 import './PercolatorAssembly.scss';
 
-function PercolatorAssembly() {
+function PercolatorAssembly({ backgroundColor, dynamic, open }) {
+  const className = `assembly-perspective-view ${dynamic ? 'dynamic ' : ''} ${open ? 'open ' : ''}`;
+
   return (
-    <div className="assembly-perspective-view">
-      <TopDefault />
-      <SpreaderBasic />
-      <BasketBasic />
+    <div className={className}>
+      <TopDefault fillColor={backgroundColor} />
+      <SpreaderBasic fillColor={backgroundColor} />
+      <BasketBasic fillColor={backgroundColor} />
       <Ring />
-      <BottomDefault />
+      <BottomDefault fillColor={backgroundColor} />
     </div>
   );
 }

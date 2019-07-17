@@ -1,9 +1,22 @@
 import React from 'react';
+import PercolatorAssembly from './PercolatorAssembly';
+import './Configurator.scss';
 
-function Home() {
+function Configurator() {
+  const style = {
+    backgroundColor: '#212121',
+  };
+
   return (
-    <h1>Welcome to the configurator</h1>
+    <div className="configurator">
+      <div style={style} className="result-viewport">
+        <PercolatorAssembly open backgroundColor={style.backgroundColor} />
+      </div>
+      <div className="options">
+        Options...
+      </div>
+    </div>
   );
 }
 
-export default Home;
+export default Configurator;

@@ -1,0 +1,19 @@
+// Width of the viewport for the percolator assembly
+$viewport-width: 150px;
+
+.configurator {
+  display: flex;
+  justify-content: space-between;
+
+  .result-viewport {
+    padding: 50px;
+    width: $viewport-width;
+    height: 550px;
+
+    border-radius: 5px;
+  }
+
+  .options {
+    width: calc(100% - $viewport-width);
+  }
+}
