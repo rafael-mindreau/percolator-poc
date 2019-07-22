@@ -1,19 +1,79 @@
+@import '../constants/colors.scss';
+@import '../constants/shadows.scss';
+
 // Width of the viewport for the percolator assembly
-$viewport-width: 150px;
+$assembly-view-width: 150px;
+$assembly-view-padding: 50px;
 
 .configurator {
   display: flex;
   justify-content: space-between;
 
   .result-viewport {
-    padding: 50px;
-    width: $viewport-width;
+    padding: $assembly-view-padding;
+    width: $assembly-view-width;
     height: 550px;
 
     border-radius: 5px;
   }
 
   .options {
-    width: calc(100% - $viewport-width);
+    margin-left: 20px;
+    width: calc(100% - (#{$assembly-view-width} + (#{$assembly-view-padding} * 2)));
+
+    .option {
+      border-bottom: 1px dotted grey;
+
+      .option-number {
+        font-size: 48px;
+        font-family: 'Literata', serif;
+        font-weight: 700;
+      }
+
+      .option-title, .choice-title {
+        margin: 10px 0;
+        font-weight: 700;
+        font-size: 14px;
+      }
+
+      .choices {
+        display: flex;
+        justify-content: flex-start;
+
+        .choice {
+          margin: 0 5px;
+          background-color: $main-color;
+
+          &:first-child {
+            margin-left: 0;
+          }
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+
+      .choice-description {
+        font-size: 14px;
+      }
+
+      .bottom-bar {
+        margin: 20px 0;
+
+        .cost {
+          max-width: 55px;
+          padding: 8px;
+
+          font-size: 14px;
+          font-weight: 700;
+          text-align: center;
+
+          background-color: $light-foreground;
+          color: $dark-text;
+          border-radius: 5px;
+        }
+      }
+    }
   }
 }
