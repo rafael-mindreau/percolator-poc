@@ -9,8 +9,6 @@ function Configurator({ spreader }) {
     backgroundColor: '#212121',
   };
 
-  console.log(options.spreaders);
-
   const mappedOptions = Object.keys(options).map((partKey, index) => {
     // Put choices per part into a list
     const part = options[partKey];
