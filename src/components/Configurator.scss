@@ -31,6 +31,7 @@ $assembly-view-padding: 50px;
       }
 
       .option-title, .choice-title {
+        text-transform: capitalize;
         margin: 10px 0;
         font-weight: 700;
         font-size: 14px;
@@ -39,19 +40,6 @@ $assembly-view-padding: 50px;
       .choices {
         display: flex;
         justify-content: flex-start;
-
-        .choice {
-          margin: 0 5px;
-          background-color: $main-color;
-
-          &:first-child {
-            margin-left: 0;
-          }
-
-          &:last-child {
-            margin-right: 0;
-          }
-        }
       }
 
       .choice-description {
