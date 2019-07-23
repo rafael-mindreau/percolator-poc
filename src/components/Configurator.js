@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import PercolatorAssembly from './PercolatorAssembly';
+import Choice from './Choice';
 import options from '../constants/options';
 import './Configurator.scss';
 
@@ -16,9 +17,7 @@ function Configurator({ spreader }) {
       const option = part[optionKey];
 
       return (
-        <div className="choice">
-          {option.name}
-        </div>
+        <Choice component={option.component} />
       );
     });
 
