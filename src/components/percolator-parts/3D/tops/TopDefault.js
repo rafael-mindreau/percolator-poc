@@ -1,6 +1,47 @@
 import React from 'react';
 
-export default function TopDefault({ fillColor }) {
+export default function TopDefault({ fillColor, pinholed }) {
+  let pinholes;
+
+  if (pinholed) {
+    pinholes = (
+      /* eslint-disable */
+      <g>
+        <path
+           fill="none" stroke="white" stroke-width="0.52876937" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="0, 1.85069283"
+           id="path662"
+           d="m 13.293298,286.36445 c 8.553205,5.26706 28.981927,5.2115 38.011484,0.1262"
+           stroke-miterlimit="10" />
+        <path
+           fill="none" stroke="white" stroke-width="0.52876937" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="0, 1.85069283"
+           id="path664"
+           d="m 13.293298,287.42273 c 8.553205,5.26706 28.981927,5.2115 38.011484,0.1262"
+           stroke-miterlimit="10" />
+        <path
+           fill="none" stroke="white" stroke-width="0.52876937" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="0, 1.85069283"
+           id="path666"
+           d="m 13.293298,288.48101 c 8.553205,5.26705 28.981927,5.21149 38.011484,0.1262"
+           stroke-miterlimit="10" />
+        <path
+           fill="none" stroke="white" stroke-width="0.52876937" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="0, 1.85069283"
+           id="path668"
+           d="m 13.293298,289.53929 c 8.553205,5.26705 28.981927,5.21149 38.011484,0.1262"
+           stroke-miterlimit="10" />
+        <path
+           fill="none" stroke="white" stroke-width="0.52876937" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="0, 1.85069283"
+           id="path670"
+           d="m 13.293298,290.59757 c 8.553205,5.26705 28.981927,5.21149 38.011484,0.1262"
+           stroke-miterlimit="10" />
+        <path
+           fill="none" stroke="white" stroke-width="0.52876937" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="0, 1.85069283"
+           id="path672"
+           d="m 13.293298,291.65585 c 8.553205,5.26705 28.981927,5.21149 38.011484,0.1262"
+           stroke-miterlimit="10" />
+      </g>
+      /* eslint-enable */
+    );
+  }
+
   return (
     /* eslint-disable */
     <svg
@@ -116,36 +157,7 @@ export default function TopDefault({ fillColor }) {
           fill="none" stroke-width="0.26438469"
           id="path660"
           d="M 13.386033,286.21524" />
-       <path
-          fill="none" stroke="white" stroke-width="0.52876937" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="0, 1.85069283"
-          id="path662"
-          d="m 13.293298,286.36445 c 8.553205,5.26706 28.981927,5.2115 38.011484,0.1262"
-          stroke-miterlimit="10" />
-       <path
-          fill="none" stroke="white" stroke-width="0.52876937" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="0, 1.85069283"
-          id="path664"
-          d="m 13.293298,287.42273 c 8.553205,5.26706 28.981927,5.2115 38.011484,0.1262"
-          stroke-miterlimit="10" />
-       <path
-          fill="none" stroke="white" stroke-width="0.52876937" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="0, 1.85069283"
-          id="path666"
-          d="m 13.293298,288.48101 c 8.553205,5.26705 28.981927,5.21149 38.011484,0.1262"
-          stroke-miterlimit="10" />
-       <path
-          fill="none" stroke="white" stroke-width="0.52876937" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="0, 1.85069283"
-          id="path668"
-          d="m 13.293298,289.53929 c 8.553205,5.26705 28.981927,5.21149 38.011484,0.1262"
-          stroke-miterlimit="10" />
-       <path
-          fill="none" stroke="white" stroke-width="0.52876937" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="0, 1.85069283"
-          id="path670"
-          d="m 13.293298,290.59757 c 8.553205,5.26705 28.981927,5.21149 38.011484,0.1262"
-          stroke-miterlimit="10" />
-       <path
-          fill="none" stroke="white" stroke-width="0.52876937" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="0, 1.85069283"
-          id="path672"
-          d="m 13.293298,291.65585 c 8.553205,5.26705 28.981927,5.21149 38.011484,0.1262"
-          stroke-miterlimit="10" />
+       {pinholes}
        <path
           fill="white"
           id="path674"
